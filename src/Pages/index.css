@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  background: rgb(25, 42, 86);
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgb(25, 42, 86);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.spinner {
+  width: 80px;
+  height: 80px;
+  border: 6px solid rgba(255, 255, 255, 0.3);
+  border-top: 6px solid #fff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.loading-text {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  opacity: 0.9;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+  max-width: 90%;
+  line-height: 1.4;
+}
+
+/* 🔁 Ensure good scaling on smaller devices */
+@media (max-width: 480px) {
+  .spinner {
+    width: 60px;
+    height: 60px;
+    border-width: 5px;
+  }
+
+  .loading-text {
+    font-size: 16px;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
